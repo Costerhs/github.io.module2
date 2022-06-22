@@ -1,0 +1,86 @@
+.questes {
+    display: flex;
+    justify-content: center;
+}
+
+.quest {
+    margin: 0 auto;
+    justify-content: space-between;
+    row-gap: 76px;
+    flex-direction: row;
+
+
+    .quest__item {
+        align-items: center;
+        width: 40%;
+    }
+
+    .qw {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .quest__img {
+        margin-right: 64px;
+
+    }
+
+    .quest__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #282C37;
+        margin: 0;
+        transition: color 0.2;
+
+        &:hover {
+            text-decoration-line: underline;
+
+            color: #5391DC;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:993px) {
+    .quest {
+        .quest__item {
+            width: 46%;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .quest {
+        flex-direction: column;
+        align-content: center;
+
+        .quest__text {
+            font-size: 24px;
+        }
+
+        .quest__img {
+            margin-right: 14px;
+        }
+
+        .quest__item {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .quest {
+        .quest__item {
+            width: 90%;
+        }
+
+        .quest__text {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import './modules/header.scss';
+@import './modules/mainPages/konsult.scss';
+@import './font.scss';
+@import './modules/footer.scss';
+@import './modules/serv.scss';
+
+@media (min-width:1441px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+.facebook:hover path {
+    fill: #3b5998;
+}
+
+.whats:hover path {
+    fill: #25D366;
+}
+
+.tele:hover path {
+    fill: #2AABEE;
+}

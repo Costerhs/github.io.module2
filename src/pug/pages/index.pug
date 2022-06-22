@@ -1,0 +1,38 @@
+extends ../maket.pug
+block content
+     .container
+          - var questValues = [' Как гайти точки роста и определить цели?','Как избежать проблем на старте нового бизнеса?','Как увеличить прибыль, управляя ценами?','Как не попасть в "черную дыру" затрат на продвижение?'] 
+          .main
+               .main-bg
+                    .start.col-6
+                         .start__title-first.col-12 Создаем решения 
+                         .start__title-second.col-8   для роста бизнеса 
+                         .start__subtitle.col-8 На основе анализа данных с алгоритмами реализации
+                         button.start__button Обсудить проблему 
+                    .cube.col-5 
+                         img(src="img/cube.svg", alt="er")
+          .questes
+               section.quest.d-flex.row.col-10
+                    each value in questValues
+                         .quest__item.d-flex
+                              img(src="img/emptyLogo.svg", alt="er").quest__img
+                              p.quest__text #{value}
+          .service 
+               h1.service__title Услуги
+               .service__list 
+                    .service__item1
+                         a(href="service.html")  
+                              img(src="img/service/book.svg", alt="er").service__img
+                              p.service__text Разрабатываем маркетинг-план: дорожная карта достижения целей
+                    .service__item2
+                         a(href="service.html") 
+                              img(src="img/service/glasses.svg", alt="er").service__img
+                              p.service__text Повышаем эффективность продвижения: аудит существующей модели
+                    .service__item3
+                         a(href="service.html")  
+                              img(src="img/service/glass.svg", alt="er").service__img
+                              p.service__text Находим скрытую прибыль: анализ модели ценообразования
+                    .service__item4
+                         a(href="service.html")  
+                              img(src="img/service/rocket.svg", alt="er").service__img
+                              p.service__text Запускаем новый проект: start-up маркетинг
