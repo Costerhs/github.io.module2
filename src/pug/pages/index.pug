@@ -4,10 +4,10 @@ block content
           - var questValues = [' Как гайти точки роста и определить цели?','Как избежать проблем на старте нового бизнеса?','Как увеличить прибыль, управляя ценами?','Как не попасть в "черную дыру" затрат на продвижение?'] 
           .main
                .main-bg
-                    .start.col-6
-                         .start__title-first.col-12 Создаем решения 
-                         .start__title-second.col-8   для роста бизнеса 
-                         .start__subtitle.col-8 На основе анализа данных с алгоритмами реализации
+                    .start
+                         .start__title-first Создаем решения 
+                         .start__title-second   для роста бизнеса 
+                         .start__subtitle.col-10 На основе анализа данных с алгоритмами реализации
                          button.start__button Обсудить проблему 
                     .cube.col-5 
                          img(src="img/cube.svg", alt="er")
@@ -36,3 +36,20 @@ block content
                          a(href="service.html")  
                               img(src="img/service/rocket.svg", alt="er").service__img
                               p.service__text Запускаем новый проект: start-up маркетинг
+          .modal-none
+               .modalWindow
+                    .modalWindow__close 
+                         img(src="../img/close.svg", alt="er")
+                    .modalForm 
+                         .modalForm__title Оставьте заявку
+                         .modalForm-input 
+                              input(type="text" placeholder='Ваше имя').input
+                              .error-text 
+                         .modalForm-input 
+                              input(type="text" placeholder='Email').input
+                              .error-text
+                         .modalForm-input 
+                              textarea( placeholder='Пожалуйста опишите вашу проблему').input.input__textarea
+                              .error-text  
+                         button.form__btn.form__btn-error Получить консультацию
+                         .send-text 

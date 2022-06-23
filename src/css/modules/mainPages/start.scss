@@ -107,7 +107,7 @@
 @media (max-width:993px) {
 
     .cube img {
-        width: 350px;
+        width: 300px;
     }
 
     .main {
@@ -117,6 +117,13 @@
         .main-bg {
             background-size: 480px;
             background-position: 56% 18%;
+
+
+            .start {
+                .start__title-first {
+                    font-size: 34px;
+                }
+            }
         }
     }
 }

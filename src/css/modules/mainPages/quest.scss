@@ -58,29 +58,34 @@
     .quest {
         flex-direction: column;
         align-content: center;
-
-        .quest__text {
-            font-size: 24px;
-        }
+        width: 100% !important;
 
         .quest__img {
-            margin-right: 14px;
+            margin-right: 34px;
         }
 
         .quest__item {
-            width: 80%;
+            width: 90%;
         }
     }
 }
 
 @media (max-width:576px) {
+    .questes {
+        width: 100%;
+    }
+
     .quest {
+
         .quest__item {
-            width: 90%;
+            width: 100%;
         }
+
+
 
         .quest__text {
             font-size: 18px;
         }
+
     }
 }

@@ -24,7 +24,7 @@
         justify-content: space-between;
     }
 
-    .header__links {
+    .header-links {
         display: flex;
         gap: 21px;
         justify-content: right;
@@ -75,6 +75,7 @@
 
     .burger__logo {
         width: 64px;
+        padding-bottom: 80px;
     }
 
     .burger__content {
@@ -83,14 +84,23 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        .header-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 160px;
+            gap: 40px;
+        }
     }
 
-    .burger__link {
+    .burger__menu {
         display: flex;
         flex-direction: column;
         gap: 45px;
 
-        a {
+
+
+        .nav__item {
             font-family: 'Lato';
             font-style: normal;
             font-weight: 500;
@@ -101,6 +111,10 @@
             text-transform: uppercase;
             text-decoration: none;
             color: #282C37;
+        }
+
+        .nav__item--active {
+            font-weight: 700;
         }
     }
 
@@ -122,7 +136,7 @@
             justify-content: space-between;
         }
 
-        .header__links {
+        .header-links {
             display: none;
         }
 
