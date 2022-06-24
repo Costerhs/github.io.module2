@@ -5,7 +5,7 @@ const activateNavItem = () => {
             el.classList.add('nav__item--active');
         } else if (window.location.pathname == '/') {
             document.querySelector('.nav__konsult').classList.add('nav__item--active')
-        } else if (window.location.href.indexOf('/trainDesc.html')) {
+        } else if (window.location.href.indexOf('/trainDesc.html') != -1) {
             document.querySelector('.nav__train').classList.add('nav__item--active');
         }
     }
