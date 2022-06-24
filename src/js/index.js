@@ -7,4 +7,3 @@ toggleBurger();
 activateNavItem();
 validationKonsult();
 toggleModalForm();
-console.log(window.location.pathname)
