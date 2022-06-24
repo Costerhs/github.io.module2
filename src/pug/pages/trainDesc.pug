@@ -1,0 +1,33 @@
+extends ../maket.pug
+include ../mixin/trainDescMixin.pug
+block content
+    include ../data/trainDescData.pug
+    - var list = ['Определение маркетинга как технологии роста','Организация маркетинга как сквозного бизнес-процесса','Получение практических навыков применения технологии маркетинга'            ]
+    .trainDesc 
+        .container 
+            .bread 
+                .bread__item
+                    a(href='index.html').bread__item-text Главная
+                .bread__item
+                    .line /
+                .bread__item
+                    a(href='train.html').bread__item-text Тренинги
+                .bread__item
+                   .line /
+                .bread__item
+                    a(href='').bread__item-active Бизнес-тренинг «Маркетинг – технология роста»
+
+            .trainDesc__title.col-12.col-md-10 Бизнес-тренинг «Маркетинг – технология роста»
+            .trainDesc__target Для кого: руководители компаний, маркетологи, продавцы
+            .trainDesc__goal Цели бизнес-тренинга:
+            .trainDesc__cube 
+                each item in list 
+                    .trainDesc__cube__item 
+                        img(src="img/emptyLogo.svg", alt="er")
+                        p.trainDesc__cube__text #{item}
+            button.trainDesc__btn Подробнее
+            .trainDesc__list
+                .trainDesc__subtitle Программа
+                each val in trainDescData
+                    +trainDescMixin(val)
+            include ../include/form

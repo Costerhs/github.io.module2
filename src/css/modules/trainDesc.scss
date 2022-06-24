@@ -1,0 +1,198 @@
+.trainDesc {
+    background: url(../img/bigCube.svg) no-repeat;
+    background-position: 100% 2%;
+    padding-top: 54px;
+
+    .container {
+        background: url(../img/pol.png) no-repeat 0% 3.5%;
+    }
+
+    .trainDesc__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        // background: url(../img/pol.png) no-repeat -1% 0%;
+
+        color: #282C37;
+        padding-bottom: 20px;
+    }
+
+    .trainDesc__subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        /* identical to box height */
+
+
+        color: #282C37;
+        padding-bottom: 45px;
+    }
+
+    .trainDesc__item {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 45px;
+    }
+
+    .trainDesc__item-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #282C37;
+        padding-bottom: 25px;
+    }
+
+    .trainDesc__item-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        padding-left: 40px;
+    }
+
+    .trainDesc__target,
+    .trainDesc__goal {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+
+        color: #282C37;
+    }
+
+    .trainDesc__list {
+        padding-top: 162px;
+    }
+
+    .trainDesc__cube {
+        padding-top: 28px;
+        padding-bottom: 60px;
+    }
+
+    .trainDesc__btn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 287px;
+        height: 48px;
+        border: 0px;
+        background: #47CF34 url(../img/right.svg) no-repeat 90%;
+        border-radius: 8px;
+        transition: background 0.2;
+
+        &:hover {
+            background: #47CF34 url(../img/right.svg) no-repeat 90%;
+        }
+    }
+
+    .trainDesc__cube__item {
+        display: flex;
+        padding-left: 20px;
+
+        img {
+            width: 23px;
+            height: 25px;
+        }
+
+        gap: 41px;
+    }
+
+    .trainDesc__item-subtitle--circle {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #282C37;
+        background: url(../img/circle11.svg) no-repeat;
+        background-position: 0% 10%;
+        padding-left: 20px;
+    }
+
+    .trainDesc__item-subtitle {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #282C37;
+    }
+}
+
+
+@media (max-width:992px) {
+    .trainDesc {
+        padding-top: 20px;
+
+        .container {
+            background: none;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .trainDesc {
+        background: none;
+
+        .trainDesc__list {
+            padding-top: 100px;
+        }
+
+        .trainDesc__title {
+            font-size: 37px;
+            line-height: 44px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .trainDesc {
+        .trainDesc__list {
+            padding-top: 75px;
+        }
+
+        .trainDesc__item-desc {
+            padding-left: 10px;
+        }
+
+        .trainDesc__cube {
+            padding-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .trainDesc {
+        .trainDesc__cube__item {
+            padding-left: 10px;
+        }
+
+        .trainDesc__title {
+            font-size: 27px;
+            line-height: 32px;
+        }
+
+        .trainDesc__subtitle {
+            font-size: 24px;
+        }
+
+        .trainDesc__item-title {
+            font-size: 16px;
+        }
+    }
+}

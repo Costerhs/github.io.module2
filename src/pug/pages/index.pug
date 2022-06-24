@@ -1,7 +1,7 @@
 extends ../maket.pug
 block content
      .container
-          - var questValues = [' Как гайти точки роста и определить цели?','Как избежать проблем на старте нового бизнеса?','Как увеличить прибыль, управляя ценами?','Как не попасть в "черную дыру" затрат на продвижение?'] 
+          - var questValues = [' Как найти точки роста и определить цели?','Как избежать проблем на старте нового бизнеса?','Как увеличить прибыль, управляя ценами?','Как не попасть в "черную дыру" затрат на продвижение?'] 
           .main
                .main-bg
                     .start
@@ -21,19 +21,19 @@ block content
                h1.service__title Услуги
                .service__list 
                     .service__item1
-                         a(href="service.html")  
+                         a(href="service.html").service__link  
                               img(src="img/service/book.svg", alt="er").service__img
                               p.service__text Разрабатываем маркетинг-план: дорожная карта достижения целей
                     .service__item2
-                         a(href="service.html") 
+                         a(href="service.html").service__link 
                               img(src="img/service/glasses.svg", alt="er").service__img
                               p.service__text Повышаем эффективность продвижения: аудит существующей модели
                     .service__item3
-                         a(href="service.html")  
+                         a(href="service.html").service__link  
                               img(src="img/service/glass.svg", alt="er").service__img
                               p.service__text Находим скрытую прибыль: анализ модели ценообразования
                     .service__item4
-                         a(href="service.html")  
+                         a(href="service.html").service__link  
                               img(src="img/service/rocket.svg", alt="er").service__img
                               p.service__text Запускаем новый проект: start-up маркетинг
           .modal-none

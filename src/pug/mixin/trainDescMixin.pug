@@ -1,0 +1,11 @@
+mixin trainDescMixin(arr)
+    .trainDesc__item 
+        .trainDesc__item-title #{arr.title}
+        .trainDesc__item-desc
+            if arr.circle
+                each val in arr.list 
+                    .trainDesc__item-subtitle--circle #{val}
+            else 
+                each val in arr.list 
+                    .trainDesc__item-subtitle #{val}
+

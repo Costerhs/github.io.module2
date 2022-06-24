@@ -1,0 +1,14 @@
+mixin trainCart(arr)
+    .train__item 
+        .train__head.col-11.col-lg-6 
+                h1.train__title  #{arr.title}
+                .train__subtitles 
+                    .train__subtitle #{arr.firstSubtitle}
+                    .train__subtitle #{arr.secondSubtitle}
+                a(href="trainDesc.html")
+                    button.train__btn Подробнее 
+        .train__desc.col-12.col-lg-5
+                each val in arr.list 
+                    .train__desc__item 
+                        img(src="img/emptyLogo.svg", alt="er")
+                        p.train__desc__text #{val}

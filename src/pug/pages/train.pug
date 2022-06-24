@@ -1,3 +1,9 @@
 extends ../maket.pug
+include ../mixin/trainCart.pug
 block content
-     h1 train
+     include ../data/trainData.pug
+     .train 
+          .container 
+               .train__list 
+                    each val in trainData 
+                         +trainCart(val)

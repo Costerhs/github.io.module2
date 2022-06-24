@@ -1,0 +1,135 @@
+.train {
+    padding-top: 98px;
+    padding-bottom: 20px;
+    background: url(../img/bigCube.svg) no-repeat;
+    background-position: 100% 0%;
+
+    .train__list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .train__item {
+        display: flex;
+        padding-top: 38px;
+        padding-left: 38px;
+        padding-bottom: 40px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
+        border-radius: 20px;
+
+        .train__head {
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+        }
+    }
+
+    .train__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #282C37;
+    }
+
+    .train__subtitle {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #282C37;
+    }
+
+    .train__btn {
+        width: 230px;
+        height: 48px;
+        background: #287EE7 url(../img/right.svg) no-repeat 90%;
+        border-radius: 8px;
+        text-align: left;
+        border: 0px;
+        transition: background 0.2s;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:hover {
+            background: #4B9AFB url(../img/right.svg) no-repeat 90%;
+        }
+
+    }
+
+    .train__desc {
+        gap: 16px;
+        padding-right: 76px;
+        padding-top: 20px;
+    }
+
+    .train__desc img {
+        width: 23px;
+        height: 25px;
+    }
+
+    .train__desc__item {
+        gap: 41px;
+        display: flex;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        justify-content: start;
+        color: #282C37;
+    }
+}
+
+@media (max-width:768px) {
+    .train {
+        background: white;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:576px) {
+    .train {
+        .train__item {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .train__title {
+            font-size: 24px;
+        }
+
+        .train__desc {
+            padding-right: 20px;
+        }
+
+        .train__desc__item {
+            gap: 15px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .train {
+        .train__item {
+            flex-direction: column;
+
+            .train__head {
+                gap: 15px;
+            }
+        }
+
+
+    }
+}

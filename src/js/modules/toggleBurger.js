@@ -4,8 +4,8 @@ function toggleBurger() {
     let closeMenu = document.querySelector('.burger__close');
 
     function toggleClassMenu(element) {
-        element.addEventListener('click', function () {
-            bgMenu.classList.toggle('burger--notActive');
+        element?.addEventListener('click', function () {
+            bgMenu?.classList.toggle('burger--notActive');
         })
     }
 

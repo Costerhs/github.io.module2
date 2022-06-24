@@ -5,7 +5,11 @@ const activateNavItem = () => {
             el.classList.add('nav__item--active');
         } else if (window.location.pathname.length <= 1) {
             document.querySelector('.nav__konsult').classList.add('nav__item--active')
+        } else if (window.location.pathname === '/trainDesc.html') {
+            document.querySelector('.nav__train').classList.add('nav__item--active');
+            console.log('as')
         }
+        console.log(window.location.pathname)
     }
 }
 
