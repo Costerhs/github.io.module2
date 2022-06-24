@@ -127,6 +127,15 @@
 
 
 
+@media (max-width:992px) {
+    .header {
+        .header__block {
+            justify-content: space-between;
+        }
+
+        .header-links {}
+    }
+}
 
 @media (max-width:768px) {
     .header {
